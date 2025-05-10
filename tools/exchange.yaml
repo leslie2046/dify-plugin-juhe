@@ -40,7 +40,7 @@ parameters:
   label:
     en_US: API KEY
     zh_Hans: API密钥
-  type: secret
+  type: secret-input
   required: true
   form: llm
   human_description:
