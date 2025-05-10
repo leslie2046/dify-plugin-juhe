@@ -11,7 +11,7 @@ identity:
 tools:
   - tools/weather.yaml
   - tools/exchange.yaml
-  - tools/exchange_list.yaml
+  - tools/currency_list.yaml
 extra:
   python:
     source: provider/juhe.py

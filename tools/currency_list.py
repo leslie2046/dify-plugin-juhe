@@ -10,7 +10,7 @@ class ToolInvokeError(Exception):
     pass
 
 
-class ExchangeListTool(Tool):
+class CurrencyListTool(Tool):
     def _invoke(
         self, tool_parameters: dict[str, Any]
     ) -> Generator[ToolInvokeMessage, None, None]:
