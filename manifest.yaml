@@ -3,11 +3,11 @@ type: plugin
 author: leslie2046
 name: juhe
 label:
-  en_US: Juhe
-  zh_Hans: 聚合API
+  en_US: Juhe Data
+  zh_Hans: 聚合数据
 description:
-  en_US: This plugin provides juhe apis as a toolbox.
-  zh_Hans: 聚合API工具箱。
+  en_US: Juhe data apis as a toolbox(e.g weather 、exchange and etc).
+  zh_Hans: 聚合API工具箱(天气、汇率等)。
 icon: icon.svg
 resource:
   memory: 268435456
