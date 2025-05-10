@@ -40,18 +40,72 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
 ![](_assets/4.png)
 ```json
 {
-  "reason": "Query successful!",
-  "result": {
-    "city": "Shanghai",
-    "realtime": {
-      "temperature": "24",
-      "humidity": "38",
-      "info": "Cloudy",
-      "direct": "Southeast wind",
-      "power": "Level 2"
-    }
-  },
-  "error_code": 0
+    "reason": "查询成功!",
+    "result": {
+        "city": "上海",
+        "realtime": {
+            "temperature": "23",
+            "humidity": "43",
+            "info": "多云",
+            "wid": "01",
+            "direct": "西风",
+            "power": "2级",
+            "aqi": "45"
+        },
+        "future": [
+            {
+                "date": "2025-05-10",
+                "temperature": "17\/25℃",
+                "weather": "阴",
+                "wid": {
+                    "day": "02",
+                    "night": "02"
+                },
+                "direct": "西风"
+            },
+            {
+                "date": "2025-05-11",
+                "temperature": "17\/26℃",
+                "weather": "多云转晴",
+                "wid": {
+                    "day": "01",
+                    "night": "00"
+                },
+                "direct": "西风转南风"
+            },
+            {
+                "date": "2025-05-12",
+                "temperature": "19\/29℃",
+                "weather": "晴转阴",
+                "wid": {
+                    "day": "00",
+                    "night": "02"
+                },
+                "direct": "东南风转南风"
+            },
+            {
+                "date": "2025-05-13",
+                "temperature": "20\/29℃",
+                "weather": "阴",
+                "wid": {
+                    "day": "02",
+                    "night": "02"
+                },
+                "direct": "东南风"
+            },
+            {
+                "date": "2025-05-14",
+                "temperature": "21\/29℃",
+                "weather": "阴转小雨",
+                "wid": {
+                    "day": "02",
+                    "night": "07"
+                },
+                "direct": "东南风转南风"
+            }
+        ]
+    },
+    "error_code": 0
 }
 ```
 
@@ -59,15 +113,30 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
 ![](_assets/5.png)
 ```json
 {
-  "reason": "Query successful!",
-  "result": [
-    {
-      "currencyF": "USD",
-      "currencyT": "CNY",
-      "exchange": "7.2374"
-    }
-  ],
-  "error_code": 0
+    "reason": "查询成功!",
+    "result": [
+        {
+            "currencyF": "USD",
+            "currencyF_Name": "美元",
+            "currencyT": "CNY",
+            "currencyT_Name": "人民币",
+            "currencyFD": "1",
+            "exchange": "7.2374",
+            "result": "7.2374",
+            "updateTime": "2025-05-10 15:27:00"
+        },
+        {
+            "currencyF": "CNY",
+            "currencyF_Name": "人民币",
+            "currencyT": "USD",
+            "currencyT_Name": "美元",
+            "currencyFD": "1",
+            "exchange": "0.1382",
+            "result": "0.1382",
+            "updateTime": "2025-05-10 15:27:00"
+        }
+    ],
+    "error_code": 0
 }
 ```
 
@@ -75,11 +144,25 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
 
 ```json
 {
-  "reason": "Query successful",
+  "reason": "查询成功",
   "result": {
     "list": [
-      { "name": "US Dollar", "code": "USD" },
-      { "name": "Chinese Yuan", "code": "CNY" },
+            {
+                "name": "美元",
+                "code": "USD"
+            },
+            {
+                "name": "人民币",
+                "code": "CNY"
+            },
+            {
+                "name": "日元",
+                "code": "JPY"
+            },
+            {
+                "name": "欧元",
+                "code": "EUR"
+            },
       ...
     ]
   },
