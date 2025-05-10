@@ -1,0 +1,18 @@
+identity:
+  author: leslie2046
+  name: juhe
+  label:
+    en_US: juhe API
+    zh_Hans: 聚合API
+    pt_BR: juhe API
+  description:
+    en_US: This plugin provides juhe apis as a toolbox.
+    zh_Hans: 这个插件提供聚合API.
+    pt_BR: This plugin provides juhe apis as a toolbox.
+  icon: icon.svg
+tools:
+  - tools/weather.yaml
+  - tools/exchange.yaml
+extra:
+  python:
+    source: provider/juhe.py
