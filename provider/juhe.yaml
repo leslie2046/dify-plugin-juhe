@@ -12,6 +12,7 @@ tools:
   - tools/weather.yaml
   - tools/exchange.yaml
   - tools/currency_list.yaml
+  - tools/oil_price.yaml
 extra:
   python:
     source: provider/juhe.py
