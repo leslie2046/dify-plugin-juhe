@@ -45,5 +45,6 @@ parameters:
   form: llm
   human_description:
     en_US: The API key from Juhe.cn for accessing the currency exchange data.
-    zh_Hans: 来自聚合数据用于查询汇率的API密钥。
+    zh_Hans: 来自聚合数据的API密钥。
   llm_description: API key for querying currency exchange rate info from the provider.
+  url: https://dashboard.juhe.cn/data/index/my
