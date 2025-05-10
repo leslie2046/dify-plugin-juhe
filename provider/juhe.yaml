@@ -4,11 +4,9 @@ identity:
   label:
     en_US: juhe API
     zh_Hans: 聚合API
-    pt_BR: juhe API
   description:
     en_US: This plugin provides juhe apis as a toolbox.
-    zh_Hans: 这个插件提供聚合API.
-    pt_BR: This plugin provides juhe apis as a toolbox.
+    zh_Hans: 聚合API工具箱.
   icon: icon.svg
 tools:
   - tools/weather.yaml

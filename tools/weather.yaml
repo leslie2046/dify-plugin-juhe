@@ -28,9 +28,9 @@ parameters:
 
 - name: apiKey
   label:
-    en_US: Weather API Key
-    zh_Hans: 天气API密钥
-  type: string
+    en_US: API KEY
+    zh_Hans: API密钥
+  type: secret
   required: true
   form: llm
   human_description:

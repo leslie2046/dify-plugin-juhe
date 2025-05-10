@@ -3,15 +3,11 @@ type: plugin
 author: leslie2046
 name: juhe
 label:
-  en_US: juhe
-  ja_JP: juhe
+  en_US: Juhe
   zh_Hans: 聚合API
-  pt_BR: juhe
 description:
   en_US: This plugin provides juhe apis as a toolbox.
-  ja_JP: This plugin provides juhe apis as a toolbox.
-  zh_Hans: This plugin provides juhe apis as a toolbox.
-  pt_BR: This plugin provides juhe apis as a toolbox.
+  zh_Hans: 聚合API工具箱。
 icon: icon.svg
 resource:
   memory: 268435456
