@@ -10,7 +10,7 @@ class ToolInvokeError(Exception):
     pass
 
 
-class OilPriceTool(Tool):
+class ShFutureTool(Tool):
     def _invoke(
         self, tool_parameters: dict[str, Any]
     ) -> Generator[ToolInvokeMessage, None, None]:
@@ -18,9 +18,10 @@ class OilPriceTool(Tool):
         if not key:
             raise ToolProviderCredentialValidationError("Please provide the correct apiKey")
 
-        url = "http://apis.juhe.cn/gnyj/query"
+        url = "http://web.juhe.cn/finance/gold/shfuture"
         params = {
-            "key": key
+            "key": key,
+            'v': '1',
         }
 
         response = requests.get(url, params=params)

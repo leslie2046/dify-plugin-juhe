@@ -19,11 +19,11 @@ class WeatherTool(Tool):
         """
         key = tool_parameters.get("apiKey", "")
         if not key:
-            raise ToolProviderCredentialValidationError("请配置正确的 apiKey")
+            raise ToolProviderCredentialValidationError("Please provide the correct apiKey")
 
         city = tool_parameters.get("city", "")
         if not city:
-            raise ToolInvokeError("请提供 city 参数")
+            raise ToolInvokeError("Please provide city parameter")
 
         url = "http://apis.juhe.cn/simpleWeather/query"
         params = {
@@ -33,11 +33,10 @@ class WeatherTool(Tool):
 
         response = requests.get(url, params=params)
         if response.status_code != 200:
-            raise ToolInvokeError(f"请求失败：{response.status_code} - {response.text}")
+            raise ToolInvokeError(f"Request failed:{response.status_code} - {response.text}")
         yield self.create_text_message(response.text)
 
     def validate_credentials(self, parameters: dict[str, Any]) -> None:
-        # 简单测试一下 key 是否有效
         parameters["city"] = "上海"
         for _ in self._invoke(parameters):
             break

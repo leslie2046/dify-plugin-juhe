@@ -16,12 +16,12 @@ class ExchangeTool(Tool):
     ) -> Generator[ToolInvokeMessage, None, None]:
         key = tool_parameters.get("apiKey", "")
         if not key:
-            raise ToolProviderCredentialValidationError("请配置正确的 apiKey")
+            raise ToolProviderCredentialValidationError("Please provide the correct apiKey")
 
         fromC = tool_parameters.get("from", "")
         to = tool_parameters.get("to", "")
         if not fromC or not to:
-            raise ToolInvokeError("请提供 from/to 参数")
+            raise ToolInvokeError("Please provide from/to parameter")
 
         url = "http://op.juhe.cn/onebox/exchange/currency"
         params = {
@@ -33,7 +33,7 @@ class ExchangeTool(Tool):
 
         response = requests.get(url, params=params)
         if response.status_code != 200:
-            raise ToolInvokeError(f"请求失败：{response.status_code} - {response.text}")
+            raise ToolInvokeError(f"Request failed:{response.status_code} - {response.text}")
         yield self.create_text_message(response.text)
 
     def validate_credentials(self, parameters: dict[str, Any]) -> None:

@@ -37,4 +37,3 @@ parameters:
     en_US: The API key from Juhe.cn for accessing the weather data.
     zh_Hans: 来自聚合数据用于访问天气信息的 API 密钥。
   llm_description: API key for querying weather info from the provider.
-  url: https://dashboard.juhe.cn/data/index/my

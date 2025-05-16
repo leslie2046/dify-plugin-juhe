@@ -10,7 +10,7 @@ class ToolInvokeError(Exception):
     pass
 
 
-class OilPriceTool(Tool):
+class WeatherLifeTool(Tool):
     def _invoke(
         self, tool_parameters: dict[str, Any]
     ) -> Generator[ToolInvokeMessage, None, None]:
@@ -18,9 +18,14 @@ class OilPriceTool(Tool):
         if not key:
             raise ToolProviderCredentialValidationError("Please provide the correct apiKey")
 
-        url = "http://apis.juhe.cn/gnyj/query"
+        city = tool_parameters.get("city", "")
+        if not city:
+            raise ToolInvokeError("Please provide city parameter")
+
+        url = "http://apis.juhe.cn/simpleWeather/life"
         params = {
-            "key": key
+            "key": key,
+            "city": city
         }
 
         response = requests.get(url, params=params)
@@ -29,5 +34,6 @@ class OilPriceTool(Tool):
         yield self.create_text_message(response.text)
 
     def validate_credentials(self, parameters: dict[str, Any]) -> None:
+        parameters["city"] = "上海"
         for _ in self._invoke(parameters):
             break
