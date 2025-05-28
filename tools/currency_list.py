@@ -16,7 +16,7 @@ class CurrencyListTool(Tool):
     ) -> Generator[ToolInvokeMessage, None, None]:
         key = tool_parameters.get("apiKey", "")
         if not key:
-            raise ToolProviderCredentialValidationError("请配置正确的 apiKey")
+            raise ToolProviderCredentialValidationError("Please provide the correct apiKey")
 
         url = "http://op.juhe.cn/onebox/exchange/list"
         params = {
@@ -26,7 +26,7 @@ class CurrencyListTool(Tool):
 
         response = requests.get(url, params=params)
         if response.status_code != 200:
-            raise ToolInvokeError(f"请求失败：{response.status_code} - {response.text}")
+            raise ToolInvokeError(f"Request failed:{response.status_code} - {response.text}")
         yield self.create_text_message(response.text)
 
     def validate_credentials(self, parameters: dict[str, Any]) -> None:

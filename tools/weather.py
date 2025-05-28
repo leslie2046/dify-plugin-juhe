@@ -14,9 +14,6 @@ class WeatherTool(Tool):
     def _invoke(
         self, tool_parameters: dict[str, Any]
     ) -> Generator[ToolInvokeMessage, None, None]:
-        """
-        调用天气查询工具
-        """
         key = tool_parameters.get("apiKey", "")
         if not key:
             raise ToolProviderCredentialValidationError("Please provide the correct apiKey")
