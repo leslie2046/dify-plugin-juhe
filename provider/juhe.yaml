@@ -16,6 +16,9 @@ tools:
   - tools/weather_life.yaml
   - tools/shgold.yaml
   - tools/shfuture.yaml
+  - tools/stock_hs.yaml
+  - tools/stock_hk.yaml
+  - tools/stock_usa.yaml
 extra:
   python:
     source: provider/juhe.py

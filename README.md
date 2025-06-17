@@ -3,6 +3,7 @@
 **Author:** [leslie2046](https://github.com/leslie2046)
 **Version:** 0.0.1
 **Type:** Tool
+**Repo:** [dify-plugin-juhe](https://github.com/leslie2046/dify-plugin-juhe)
 
 ### 🔍 Description
 
@@ -17,6 +18,8 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
 * **Weather** — Get weather info by city
 * **Exchange** — Convert between two currencies
 * **Currency List** — View common currency codes
+* **Oil Price** — Get oil price from china today
+* **Stock** — View stock information from USA/HK/Shanghai/Shenzhen stock market
 
 ---
 
@@ -250,6 +253,9 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
     "error_code": 0
 }
 ```
+- Stock query
+Support HongKong,USA,Shanghai,Shenzhen stock market
+[stock](https://www.juhe.cn/docs/api/id/21)
 ---
 
 ### 🐞 Issues & Feedback
