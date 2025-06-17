@@ -253,11 +253,13 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
     "error_code": 0
 }
 ```
-- Stock query
+#### í ½í³ˆ Stock quey
+
+[stock](https://www.juhe.cn/docs/api/id/21)
 
 Support HongKong,USA,Shanghai,Shenzhen stock market
 
-[stock](https://www.juhe.cn/docs/api/id/21)
+
 ---
 
 ### ğŸ Issues & Feedback
