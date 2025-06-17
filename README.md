@@ -254,6 +254,7 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
 }
 ```
 - Stock query
+
 Support HongKong,USA,Shanghai,Shenzhen stock market
 [stock](https://www.juhe.cn/docs/api/id/21)
 ---
