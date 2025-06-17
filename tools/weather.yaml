@@ -32,7 +32,7 @@ parameters:
     zh_Hans: API密钥
   type: secret-input
   required: true
-  form: llm
+  form: form
   human_description:
     en_US: The API key from Juhe.cn for accessing the weather data.
     zh_Hans: 来自聚合数据用于访问天气信息的 API 密钥。
