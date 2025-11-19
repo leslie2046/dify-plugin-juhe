@@ -514,28 +514,6 @@ Access real-time **weather**, **currency exchange rates**, and **currency code l
 
 - Support HongKong,USA,Shanghai,Shenzhen stock market
 
-
----
-
-### 🐞 Issues & Feedback
-
-* [Open an Issue](https://github.com/leslie2046/dify-plugin-juhe/issues)
-* Include error messages and steps to reproduce
-* ⚠️ Please **don’t** submit plugin issues to the main [Dify](https://github.com/langgenius/dify) repo
-
----
-
-### 📄 License
-
-[MIT](./LICENSE)
-
- Stock quey
-
-[stock](https://www.juhe.cn/docs/api/id/21)
-
-Support HongKong,USA,Shanghai,Shenzhen stock market
-
-
 ---
 
 ### 🐞 Issues & Feedback
